@@ -1,0 +1,14 @@
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  cicd:
+    runs-on: ubuntu-latest
+    steps:
+      - run: npm ci
+      - run: npm run test
+      - run: echo SUCCESS
