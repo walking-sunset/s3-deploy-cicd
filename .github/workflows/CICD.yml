@@ -9,6 +9,6 @@ jobs:
   cicd:
     runs-on: ubuntu-latest
     steps:
-      - run: npm ci
+      - run: npm install
       - run: npm run test
       - run: echo SUCCESS
